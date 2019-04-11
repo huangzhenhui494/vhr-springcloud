@@ -32,6 +32,8 @@
         <option value="$PROJECT_DIR$/../vhr_user_service_hystrix_9001/pom.xml" />
         <option value="$PROJECT_DIR$/../vhr_register_web_hystrix_dashboard/pom.xml" />
         <option value="$PROJECT_DIR$/../vhr_zuul_gateway_9527/pom.xml" />
+        <option value="$PROJECT_DIR$/../vhr_config_3344/pom.xml" />
+        <option value="$PROJECT_DIR$/../vhr_config_client_3355/pom.xml" />
       </list>
     </option>
   </component>

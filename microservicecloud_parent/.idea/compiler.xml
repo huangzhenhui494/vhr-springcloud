@@ -2,11 +2,14 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="reverse_engineering" />
+        <module name="vhr_config_3344" />
+        <module name="vhr_config_client_3355" />
         <module name="vhr_dao" />
         <module name="vhr_eureka_7001" />
         <module name="vhr_eureka_7002" />
