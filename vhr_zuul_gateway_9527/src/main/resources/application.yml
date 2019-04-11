@@ -1,0 +1,38 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: VHR-ZUUL-GATEWAY  # 注册进eureka的唯一微服务名字
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  instance:
+    instance-id: gateway-9527.com  # host映射
+    prefer-ip-address: true
+
+info:
+  app.name: hzh-vhr
+  company.name: www.hzh.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+
+ribbon:
+  eureka:
+    enable: true
+
+# before
+# localhost:9001/employee/findById/1
+# http://myzuul.com:9527/vhr-register-service/employee/findById/1
+# http://myzuul.com:9527/mydept/employee/findById/1
+
+zuul:
+  prefix: /hzh                               # 前缀
+  ignored-services: "*"                      # 忽略名字
+  routes:
+    mydept.serviceId: VHR-REGISTER-SERVICE   # 真实名字
+    mydept.path: /mydept/**                  # 虚拟名字
+
+# after
+# http://myzuul.com:9527/mydept/employee/findById/1

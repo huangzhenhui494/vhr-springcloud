@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="reverse_engineering" />
+        <module name="vhr_dao" />
+        <module name="vhr_eureka_7001" />
+        <module name="vhr_eureka_7002" />
+        <module name="vhr_eureka_7003" />
+        <module name="vhr_pojo" />
+        <module name="vhr_register_web" />
+        <module name="vhr_register_web_feign" />
+        <module name="vhr_register_web_hystrix_dashboard" />
+        <module name="vhr_user_service_9001" />
+        <module name="vhr_user_service_9002" />
+        <module name="vhr_user_service_9003" />
+        <module name="vhr_user_service_hystrix_9001" />
+        <module name="vhr_zuul_gateway_9527" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="reverse_engineering" options="" />
+      <module name="vhr_register_web" options="" />
+    </option>
+  </component>
+</project>
